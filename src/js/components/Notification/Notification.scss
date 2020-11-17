@@ -1,0 +1,25 @@
+@import './../../../css/#sourse/variables';
+
+.notification__container {
+	position: fixed;
+	display: flex;
+	align-items: center;
+	bottom: 20px;
+	left: 20px;
+	padding: 20px;
+	background-color: $color-light;
+}
+
+.notification__btn {
+	cursor: pointer;
+	margin-left: 10px;
+	width: 40px;
+	height: 40px;
+	appearance: none;
+	background-color: transparent;
+	outline: none;
+
+	svg path {
+		fill: $color-dark;
+	}
+}

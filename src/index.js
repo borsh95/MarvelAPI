@@ -1,8 +1,12 @@
 import 'regenerator-runtime/runtime';
-import { API_URL, URL_COMICS, URL_CHARACTERS } from './js/constans/api';
-import { getDataApi } from './js/utils/GetDataApi';
+import App from './js/components/App/App';
+import Comics from './js/components/Comics/Comics';
+
+import './css/App.css';
+import './css/main.css';
 
 (async function () {
-	const data = await getDataApi.getData(API_URL + URL_COMICS);
-	console.log("Рузультат", data);
+	await App.render();
+
+	Comics.eventListener();
 })();

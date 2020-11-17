@@ -1,0 +1,32 @@
+/***********************Main*/
+.comics__container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.comics__item {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 20px;
+  width: 200px;
+  background-color: #f8f9fa;
+  border: 1px solid orange;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+.comics__item:hover {
+  transform: rotate(-3deg) scale(0.95);
+  filter: saturate(150%);
+}
+
+.comics__title {
+  display: flex;
+  margin: auto;
+}
+
+.comics__img {
+  width: 100%;
+}
